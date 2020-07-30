@@ -64,7 +64,7 @@ for i in  range(0, line):
   # 连接
   try:
     str_get = li_list[i].find('a',{'class':'a-link-normal'})['href']
-    worksheet.write(i+1, 1, "https://www.amazon.com/"+str_get)
+    worksheet.write(i+1, 1, "https://www.amazon.com"+str_get)
     print("at",i,1,"link",str_get)
   except:
     print("at",i,1,"no link")
